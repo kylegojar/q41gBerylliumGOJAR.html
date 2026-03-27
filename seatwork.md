@@ -57,17 +57,24 @@
 
 - Guided Question: What changed compared to the default static positioning? Try to give different values to top and left or you can change it to bottom, right.
 
+Ans: Compared to the default position, the sidebar's top side and left side is now 20 pixels away from the display screen.
+
 ### Step 2 (Fixed):
 
 - Add in css ```position: fixed; bottom: 0; width: 100%;``` to .footer.
 
 - Guided Question: What happens when you scroll the page? Why does the footer behave differently from position relative?
 
+Ans: The page is unscrollable, with or without Step 2's foother code. Although the display HAS changed, with the footer now being placed at teh very bottom of the page.
+
 ### Step 3 (Absolute):
 
 - Add in css ```position: absolute; top: 66px; left: 200px;``` to .content.
 
 - Guided Question: What is the effect of position: absolute on an element? How is it different from fixed?
+
+Ans: The "position: absolute" is placed in reference to the coordinates/pixels in the page. As such, it is pinned onto the document page. The "position: fixed" makes it so
+that it is literally stays in place in the display screen, whether or not scrolling through the page occurs. The fixed element stays there.
 
 ### Step 4 : (Absolute)
 
@@ -84,7 +91,7 @@
 }
 ```
 
-- Give .content a z-index: 1.
+- Give .content a z-index: 1. (DONE)
 
 - Guided Question: Why does the notice appear on top of the content? What happens if you swap the z‑index values?
 
